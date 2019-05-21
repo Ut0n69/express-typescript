@@ -1,7 +1,10 @@
+const dotenv = require('dotenv');
+dotenv.config();
+
 export default {
-  host: "127.0.0.1",
-  user: "",
-  password: "",
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
   database: "todo",
   port: 3306
 };
